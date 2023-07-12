@@ -34,19 +34,24 @@ function generateMarkdown(data) {
   ${data.description}
   
   ## Table of Contents
-  
+  - [Usage](#usage)
   - [Installation](#installation)
-  - [Contributions](#contributions)
+  - [Credits & Contributions](#contributions)
   - [Tests](#tests)
   - [Questions](#questions)
+  - [License](#license)
   ${renderLicenseLink(data.license)}
+
+  ## Usage
+
+  ${data.usage}
   
   ## Installation
   
   ${data.installation}
   
   
-  ## Contributions
+  ## Credits & Contributions
   
   ${data.contributions}
   
@@ -61,7 +66,7 @@ function generateMarkdown(data) {
   GitHub: [${data.github}](https://github.com/${data.github})
   
   Email: ${data.email}
-  
+
   ${renderLicenseSection(data.license)}
 `;
 }

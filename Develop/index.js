@@ -16,13 +16,18 @@ const questions = [{
   },
     {
     type: 'input',
+    name: 'usage',
+    message:'Please enter the projects usage purpose.',
+  },
+    {
+    type: 'input',
     name: 'installation',
     message:'Please enter the projects installation instructions.',
   },
     {
     type: 'input',
     name: 'contributions',
-    message:'Please enter any and all contributions.',
+    message:'Please enter any and all credits and contributions.',
   },
     {
     type: 'input',
@@ -31,7 +36,7 @@ const questions = [{
   },
     {
     type: 'list',
-    name: 'License',
+    name: 'license',
     message:'Please choose the project license.',
     choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3', 'None']
   },
